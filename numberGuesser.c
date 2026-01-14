@@ -6,7 +6,7 @@ int main(){
 	char userName[20];
 	printf("Hello! What's your name?  ");
 	scanf("%s", userName);
-	printf("Welcome, %s! Let's play a game :)  \n", userName);
+	printf("\nWelcome, %s! Let's play a game :)  \n", userName);
 
 
 	srand(time(NULL));
@@ -16,6 +16,8 @@ int main(){
 	int turns = 0;
 	int keepGoing = -1;
 	int guess = -999;
+	
+	printf("\n");
 
 	while(keepGoing){
 		printf("Guess a number between 1 and 100:  ");

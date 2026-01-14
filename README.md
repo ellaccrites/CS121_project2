@@ -1,6 +1,6 @@
 # CS121_project2
 
-#Algorithm for Number Guesser Game
+## Algorithm for Number Guesser Game
 
 make main():
     make char with length 20 called userName
