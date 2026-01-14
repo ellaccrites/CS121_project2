@@ -4,26 +4,27 @@
 
 make main():
     make char with length 20 called userName
-    print a small greeting and ask for a name
+    print a small greeting and ask for a first name
     put user input in userName
     print a personalized greeting and a comment about starting the game
 
     seed random generator
-    generate a random number between 1 - 100
-    put random number in integer called correct
+    generate a random number between 1 - 100 put in integer called correct
     
     create integer called keepGoing with value -1 (true)
-    create integer called turns
-    initialize turns at 0
+    create integer called turns initialize at 0
 
     create while(keepGoing) loop:
-        ask for a guess from user and put input into integer called guess
+        make integer called guess initialize at -999
+        ask for a guess from user and put input into guess
 
         if guess is less than correct:
             print "Too low"
+            increase turns by one
         end if
         if guess is more than correct:
             print "Too high"
+            increase turns by one
         end if         
         if guess is equal to correct:
             print "You got it!"
@@ -39,6 +40,8 @@ make main():
         print "Poor performance. Try for harder next time."
     if turns is euqal to 7:
         print "Average."
+
+    print "Goodbye! Play again sometime."
 
     return 0
 end main
